@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Football Zone</title>
+  <meta name="description" content="Formulario de contacto de Football Zone." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap"
+   rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./css/styles.css" />
+ </head>
+ <body>
+  <header class="site-header">
+   <div class="container navbar">
+    <a href="./index.html" class="logo">Football Zone</a>
+    <nav class="nav-menu" aria-label="Navegación principal">
+     <a href="./index.html">Inicio</a>
+     <a href="./jugadores.html">Jugadores</a>
+     <a href="./mundo-futbol.html">Mundo del Fútbol</a>
+     <a href="./contacto.html" class="active">Contacto</a>
+    </nav>
+   </div>
+  </header>
+
+  <main>
+   <section class="page-header">
+    <div class="container">
+     <h1>Contacto</h1>
+    </div>
+   </section>
+
+   <section class="contact-layout">
+    <div class="container">
+     <form class="form-card" action="#" method="post">
+      <div class="form-group">
+       <label for="nombre">Nombre</label>
+       <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Escribe tu nombre"
+        required
+       />
+      </div>
+
+      <div class="form-group">
+       <label for="correo">Correo</label>
+       <input
+        type="email"
+        id="correo"
+        name="correo"
+        placeholder="ejemplo@correo.com"
+        required
+       />
+      </div>
+
+      <div class="form-group">
+       <label for="password">Contraseña</label>
+       <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Crea una contraseña"
+        required
+       />
+      </div>
+
+      <div class="form-group">
+       <label for="posicion">Posición favorita</label>
+       <select id="posicion" name="posicion" required>
+        <option value="">Selecciona una opción</option>
+        <option value="portero">Portero</option>
+        <option value="defensa">Defensa</option>
+        <option value="mediocampista">Mediocampista</option>
+        <option value="delantero">Delantero</option>
+       </select>
+      </div>
+
+      <div class="form-group">
+       <label for="comentario">Comentario</label>
+       <textarea
+        id="comentario"
+        name="comentario"
+        placeholder="Escribe tu comentario aquí..."
+        required
+       ></textarea>
+      </div>
+
+      <label class="checkbox" for="aceptacion">
+       <input type="checkbox" id="aceptacion" name="aceptacion" required />
+       <span>Acepto los términos y condiciones.</span>
+      </label>
+
+      <button type="submit" class="submit-btn">Enviar</button>
+     </form>
+    </div>
+   </section>
+  </main>
+
+  <footer class="footer">
+   <div class="container">
+    <p>© 2026 Football Zone - Proyecto escolar de décimo.</p>
+   </div>
+  </footer>
+ </body>
+</html>
